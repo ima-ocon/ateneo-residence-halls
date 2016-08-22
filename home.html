@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<head>
+  <title>Ateneo Residence Halls</title>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.5.5/slicknav.min.css"></script>
+  <script src="http://cdn.jsdelivr.net/jquery.slick/1.3.7/slick.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <nav id="navigation_container" class="container-fluid">
+    <div class="container-fluid">
+      <div id="navigation_bar" class="row">
+        <div class="col-xs-1 col-xs-offset-1 tab"><a class="nav_link">ATENEO</a></div>
+        <div id="home_link" class="active transparent nav_link col-xs-1 tab"><a>HOME</a></div>
+        <div id="about_link" class="nav_link col-xs-1 tab"><a>ABOUT</a></div>
+        <div id="life_link" class="nav_link col-xs-1 tab"><a>LIFE</a></div>
+        <div id="logo" class="nav_link col-xs-2 tab"><a>LOGO</a></div>
+        <div class="nav_link col-xs-1 tab" id="staff_link"><a>STAFF</a></div>
+        <div id="facilities_link" class="nav_link col-xs-1 tab"><a>FACILITIES</a></div>
+        <div id="apply_link" class="nav_link col-xs-1 tab"><a>APPLY</a></div>
+        <div id="contact_link" class="nav_link col-xs-1 tab"><a>CONTACT</a></div>
+      </div>
+    </div>
+  </nav>
+  <section id="gallery_container" class="container-fluid">
+    <video id="arsa_vid" preload="auto" autoplay="false" loop="loop" muted="muted" volume="0">
+           <source src="https://www.dropbox.com/s/fanorpikmc3jtd0/ARSA%20vid.mp4?raw=1" type="video/mp4">
+    </video>
+    <div id="scroll_button"><a><span id="scroll_button_design"></span></a></div>
+  </section>
+  <section id="mission_vision_container" class="container-fluid">
+    <div id="mission_row" class="row">
+      <div id="mission_image" class="col-sm-5"><img class="img-responsive" id="img_living" src="http://36.media.tumblr.com/bee6c809812a0e192ff892d5e20aff7d/tumblr_m3fm8ndY2a1rvoanco5_r1_1280.jpg"></div>
+      <div id="living_description" class="col-sm-7">
+        <p id="living_title">LIVING AT THE ATENEO RESIDENCE HALLS</p>
+        <div class="living_paragraph">
+        <p>Welcome to the Residence Halls! Conveniently located at the heart of the Loyola Heights Campus, the University’s Residence Halls is the preferred student residence providing Ateneans with a sense of community as it celebrates cultural diversity.
+          Through its well-managed environment, programs, and culture. It provides integrative formation that promotes wholeness and wellness.</p>
+        <p>There are four (4) residences within the Residence Halls Complex. The Cervini Hall (for males) and Eliazo Hall (for females) are exclusive for First Year students and the North Tower (for males) and South Tower (for females) of the University Dormitory
+          are for upperclassmen, exchange students, and graduate students.
+        </p></div>
+      </div>
+    </div>
+    <div id="vision_row" class="row">
+      <div id="vision_description" class="col-sm-7">
+        <p id="vision_title">VISION AND MISSION</p>
+        <p class="vision_paragraph">The Ateneo Residence Halls envisions a dynamic community of resident students who live by the ideals of the Ateneo de Manila University as a Filipino, Catholic and Jesuit institution.</p>
+        <p class="vision_paragraph">Guided by the values espoused by the First Companions (RH Patron Saints): Ignatius of Loyola offering his sword to patient governance (leadership), Francis Xavier’s zealous mission (service), and Peter Faber devoting his life to compassionate spiritual
+          direction (spirituality), the Ateneo Residence Halls seeks to</p>
+        <ul id="mission_vision_list">
+          <li> Provide a safe and secure living environment conducive to college life;</li>
+          <li>Offer formation programs that will develop the person of the residents in the academic, socio-cultural, and spiritual aspects;</li>
+          <li>Form life enriching relationships;</li>
+          <li>Promote wellness, physical development, skills and talent development;</li>
+          <li>Advocate service opportunities and social involvement.</li>
+        </ul>
+      </div>
+      <div id="vision_image" class="col-sm-5"><img class="img-responsive" src="http://w3.ateneo.edu/ateneo/www/images/gallery/1884/797.jpg"></div>
+    </div>
+  </section>
+  <section id="student_life_container" class="container-fluid">
+     <div id="student_life_header_row">
+      <p id="student_life_title" class="section_title">STUDENT LIFE</p>
+      <p id="student_life_description" class="section_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    <div id="carousel_container" class="col-sm-12">
+     <div id="album_carousel" class="slick-slider">
+       <div class="album_carousel_container"><img src="http://www.ateneo.edu/sites/default/files/dorm_eliazo.jpg" alt="Chania" class="album_photo">
+       </div>
+       <div class="album_carousel_container"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Cervini-eliazojf1836_05.JPG" alt="Flower" class="album_photo">
+       </div>
+     </div>
+   </div>
+  </section>
+  <section id="staff_container" class="container-fluid">
+    <div id="staff_header_row" class="row">
+      <p id="staff_title" class="section_title">RESIDENTIAL STAFF AND ADVISORS</p>
+      <p id="staff_description" class="section_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    <div id="staff_carousel_container" class="col-sm-12">
+      <div id="staff_carousel" class="slick-slider">
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">TG</p>
+              <p class="resident_position">Position</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">TD</p>
+              <p class="resident_position">Position</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">PD</p>
+              <p class="resident_position">Position</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">EP</p>
+              <p class="resident_position">Position</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">Name</p>
+              <p class="resident_position">RA</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">Name</p>
+              <p class="resident_position">RA</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">Name</p>
+              <p class="resident_position">RA</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">Name</p>
+              <p class="resident_position">RA</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">Name</p>
+              <p class="resident_position">Office</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">Name</p>
+              <p class="resident_position">Office</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">Name</p>
+              <p class="resident_position">Office</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">Name</p>
+              <p class="resident_position">Office</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">Name</p>
+              <p class="resident_position">Maintenance</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">Name</p>
+              <p class="resident_position">Maintenance</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">Name</p>
+              <p class="resident_position">Maintenance</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="indiv_staff_container"><img src="http://cliparts.co/cliparts/Bcg/rng/Bcgrngy7i.png" class="resident_img img-circle img-responsive">
+            <div class="resident_text">
+              <p class="resident_name">Name</p>
+              <p class="resident_position">Maintenance</p>
+              <p class="resident_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="facilities_container" class="container-fluid">
+    <div id="facilities_header_row" class="row">
+      <p id="facilities_title" class="section_title">FACILITIES</p>
+      <p id="facilities_description" class="section_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    <div id="facilities_grid" class="row">
+      <div class="square facility1 col-sm-3">
+        <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+        <div class="facility_text">
+      <p class="facility_title">HOT AND COLD SHOWER</p>
+        <p class="facility_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></div>
+      </div>
+      <div class="square facility2 col-sm-3">       <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+        <div class="facility_text">
+  <p class="facility_title">Family Support</p>
+        <p class="facility_description">The environment and culture at the RH is that of a family. We regard one another a family members, we are there for one another not only in times of crisis but also in joyous celebrations. We share meals, we spend time together, and have lots of fun activities for community-building and camaraderie.</p>
+        </div></div>
+      <div class="square facility3 col-sm-3" >         <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+      <div class="facility_text">
+  <p class="facility_title">POSITIVE COMMUNITY COMMUNICATION</p>
+        <p class="facility_description">2. Positive Community Communication. Resident Students and their Resident Advisers (RAs) and staff communicate positively. Residents are willing to seek advice and counsel among peers and the adults within the community.</p>
+        </div></div>
+      <div class="square facility4 col-sm-3">         <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+      <div class="facility_text">
+  <p class="facility_title">ADULT PRESENCE</p>
+        <p class="facility_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div></div>
+
+      <div class="square facility1 col-sm-3">        <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+       <div class="facility_text">
+  <p class="facility_title">HOT AND COLD SHOWER</p>
+        <p class="facility_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div></div>
+      <div class="square facility2 col-sm-3">       <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+       <div class="facility_text">
+
+   <p class="facility_title">HOT AND COLD SHOWER</p>
+        <p class="facility_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div></div>
+      <div class="square facility3 col-sm-3" >       <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+       <div class="facility_text">
+
+   <p class="facility_title">HOT AND COLD SHOWER</p>
+        <p class="facility_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div></div>
+      <div class="square facility4 col-sm-3">        <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+       <div class="facility_text">
+  <p class="facility_title">HOT AND COLD SHOWER</p>
+        <p class="facility_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div></div>
+
+      <div class="square facility1 col-sm-3">       <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+       <div class="facility_text">
+   <p class="facility_title">HOT AND COLD SHOWER</p>
+        <p class="facility_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div></div>
+      <div class="square facility2 col-sm-3">        <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+       <div class="facility_text">
+  <p class="facility_title">HOT AND COLD SHOWER</p>
+        <p class="facility_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div></div>
+      <div class="square facility3 col-sm-3" >       <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+       <div class="facility_text">
+
+        <p class="facility_title">HOT AND COLD SHOWER</p>
+        <p class="facility_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div></div>
+      <div class="square facility4 col-sm-3">       <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+        <div class="facility_text">
+  <p class="facility_title">HOT AND COLD SHOWER</p>
+        <p class="facility_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div></div>
+
+       <div class="square facility1 col-sm-3">       <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+       <div class="facility_text">
+   <p class="facility_title">HOT AND COLD SHOWER</p>
+        <p class="facility_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div></div>
+
+       <div class="square facility1 col-sm-3">       <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+       <div class="facility_text">
+   <p class="facility_title">HOT AND COLD SHOWER</p>
+        <p class="facility_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div></div>
+
+       <div class="square facility1 col-sm-3">       <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+       <div class="facility_text">
+   <p class="facility_title">HOT AND COLD SHOWER</p>
+        <p class="facility_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div></div>
+
+       <div class="square facility1 col-sm-3">      <div class="facility_image_container"><img class="facility_image" src="https://cdn0.iconfinder.com/data/icons/recreation/200/shower-512.png"></div>
+        <div class="facility_text">
+   <p class="facility_title">HOT AND COLD SHOWER</p>
+        <p class="facility_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div></div>
+    </div>
+  </section>
+  <section id="apply_container" class="container-fluid">
+    <div id="apply_header_row" class="row">
+      <p id="apply_title" class="section_title">APPLY NOW</p>
+      <p id="apply_description" class="section_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    <div id="apply_text" class="row">
+      <div class="apply_step">
+        <p class="apply_step_title">1. Application Form</p>
+        <p class="apply_step_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+          ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+      </div>
+      <div class="apply_step">
+        <p class="apply_step_title">2. Reservation</p>
+        <p class="apply_step_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+          ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+      </div>
+      <div class="apply_step">
+        <p class="apply_step_title">3. Screening</p>
+        <p class="apply_step_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+          ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact_container" class="container-fluid">
+    <div id="contact_header" class="row">
+      <p id="contact_title" class="section_title">CONTACT</p>
+      <p id="contact_description" class="section_description">Ateneo de Manila University, Katipunan Ave., 1108, Quezon City: 426-6001 loc. 5901-04</p>
+    </div>
+    <div id="map_row" class="row">
+      <div id="map">
+      </div>
+    </div>
+    <div id="form_div" class="row">
+      <form id="form">
+        <input id="name_input" size="30" type="text" placeholder="Name" name="name">
+        <input id="email_input" size="30" type="email" placeholder="E-mail" name="email">
+        <br>
+        <input id="phone_input" size="30" type="tel" placeholder="Phone" name="phone">
+        <input id="subject_input" size="60" type="text" placeholder="Subject" name="subject">
+        <br>
+        <textarea id="message_input" rows="5" placeholder="Your message..."></textarea>
+      </form>
+    </div>
+  </section>
+  <script>
+    function initMap() {
+          var mapDiv = document.getElementById('map');
+          var myLatLng = {lat: 14.638718, lng: 121.078077};
+          var map = new google.maps.Map(mapDiv, {
+            center: myLatLng,
+            zoom: 15
+          });
+          var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Ateneo de Manila'
+          });
+        }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+</body>

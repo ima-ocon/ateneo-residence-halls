@@ -1,20 +1,4 @@
-$red: rgb(232, 78, 64)
-$red-transparent: rgba(232, 78, 64, 0.2)
-$light-gray: #ECEFF1
-$blue-gray: #607D8B
-$dark-gray: rgb(40, 40, 40)
-
-$color1: $red
-$color2: $light-gray
-$color3: $blue-gray
-
-$nav-bar-color-transparent: rgba(38, 50, 56, 0.5)
-$nav-bar-tab-active-color: $color1
-$nav-bar-text-color: rgb(200, 200, 200)
-$section-background-color1: $color2
-$section-background-color2: $color3
-$heading-color1: $color3
-$text-on-white-color: $dark-gray
+@charset "UTF-8"
 
 #navigation_container
   padding-left: 0
@@ -23,7 +7,7 @@ $text-on-white-color: $dark-gray
   right: 0
   top: 0
   z-index: 10
-  background-color: $nav-bar-color-transparent
+  background-color: rgba(38, 50, 56, 0.5)
   width: 100%
 
 #navigation_bar
@@ -37,25 +21,24 @@ $text-on-white-color: $dark-gray
   margin-bottom: -11px !important
 
 .nav_link
-
+  color: #c8c8c8
   &.active
-    background-color: $red
-
+    background-color: #e84e40
     &#home_link
-      background-color: $red-transparent
+      background-color: rgba(232, 78, 64, 0.2)
+  a
+    color: #c8c8c8
+    cursor: pointer
+    &:visited
+      color: #c8c8c8
+    &:hover
+      font-weight: bold
+      color: #c8c8c8
+      text-decoration: none
+      cursor: pointer
 
-  color: $nav-bar-text-color
-
-a
-  color: $nav-bar-text-color
-
-  &:visited
-    color: $nav-bar-text-color
-
-  &:hover
-    font-weight: bold
-    color: $nav-bar-text-color
-    text-decoration: none
+#facilities_link
+  padding-right: 9%
 
 #logo
   margin-top: -15px
@@ -64,7 +47,7 @@ a
   padding-top: 2.8%
 
 #facilities_tab
-  padding-right: 9%
+  padding-left: 1%
 
 #gallery_container
   height: 100vh
@@ -74,9 +57,9 @@ a
   text-align: center
 
 #student_life_container
-  background-color: $color2
+  background-color: #ECEFF1
 
-#mission_vision_contaifner, #student_life_container, #facilities_container, #apply_container, #contact_container, #staff_container
+#mission_vision_container, #student_life_container, #facilities_container, #apply_container, #contact_container, #staff_container
   padding-left: 8%
   padding-right: 8%
   padding-top: 5%
@@ -102,24 +85,22 @@ a
   -webkit-transform: translate(0, -50%)
   transform: translate(0, -50%)
   color: #fff
-  font: normal 400 20px 'Josefin Sans', sans-serif
-  letter-spacing: .1em
+  font: normal 400 20px "Josefin Sans", sans-serif
+  letter-spacing: 0.1em
   text-decoration: none
-  transition: opacity .3s
+  transition: opacity 0.3s
   width: 46px
   height: 46px
   background-color: rgba(0, 0, 0, 0.5)
   border-radius: 100%
   box-sizing: border-box
-
   &:hover
-    opacity: .5
-
+    opacity: 0.5
   span::after
     position: absolute
     top: 50%
     left: 50%
-    content: ''
+    content: ""
     width: 16px
     height: 16px
     margin: -12px 0 0 -8px
@@ -131,7 +112,7 @@ a
 
 #mission_vision_container
   padding-top: 4%
-  background-color: $section-background-color1
+  background-color: #ECEFF1
 
 #mission_image, #vision_image
   height: 100%
@@ -145,7 +126,7 @@ a
   padding-right: 5px !important
   padding-bottom: 8px
   padding-top: 8px
-  color: $heading-color1
+  color: #607D8B
 
 #mission_row
   display: table
@@ -155,19 +136,19 @@ a
   float: none
   display: table-cell
   text-align: left
-  color: $text-on-white-color
+  color: #282828
 
 #vision_row
   margin-bottom: 4%
 
 #student_life_container
-  background-color: $section-background-color2
+  background-color: #607D8B
 
-#carousel_container
+#carousel_container, #staff_carousel_container
   width: 100vw
   margin-left: 0
 
-#album_carousel
+#album_carousel, #staff_carousel
   width: 70%
   margin: 0 auto
   margin-bottom: 7%
@@ -192,10 +173,8 @@ a
   overflow: hidden
   margin: 0
   padding: 0
-
   &:focus
     outline: none
-
   &.dragging
     cursor: pointer
     cursor: hand
@@ -213,14 +192,12 @@ a
   top: 0
   left: 0
   display: block
-
   &:before
     display: table
-    content: ''
-
+    content: ""
   &:after
     display: table
-    content: ''
+    content: ""
     clear: both
 
 .slick-loading .slick-track
@@ -238,10 +215,8 @@ a
 .slick-slide
   img
     display: block
-
   &.slick-loading img
     display: none
-
   &.dragging img
     pointer-events: none
 
@@ -262,15 +237,16 @@ a
 /* Slider
 
 .slick-loading .slick-list
-  background: #fff url('./ajax-loader.gif') center center no-repeat
+  background: #fff url("./ajax-loader.gif") center center no-repeat
 
 /* Icons
 @font-face
-  font-family: 'slick'
+  font-family: "slick"
   font-weight: normal
   font-style: normal
-  src: url('./fonts/slick.eot')
-  src: url('./fonts/slick.eot?#iefix') format("embedded-opentype"), url('./fonts/slick.woff') format("woff"), url('./fonts/slick.ttf') format("truetype"), url('./fonts/slick.svg#slick') format("svg")
+  src: url("./fonts/slick.eot")
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg")
+
 
 /* Arrows
 
@@ -313,13 +289,13 @@ a
     opacity: 1
 
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before
-  opacity: .25
+  opacity: 0.25
 
 .slick-prev:before, .slick-next:before
-  font-family: 'slick'
+  font-family: "slick"
   font-size: 30px
   line-height: 1
-  opacity: .75
+  opacity: 0.75
   color: black
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
@@ -332,10 +308,10 @@ a
   left: auto
 
 .slick-prev:before
-  content: '←'
+  content: "←"
 
 [dir='rtl'] .slick-prev:before
-  content: '→'
+  content: "→"
 
 .slick-next
   right: -25px
@@ -345,10 +321,10 @@ a
   left: -25px
 
 .slick-next:before
-  content: '→'
+  content: "→"
 
 [dir='rtl'] .slick-next:before
-  content: '←'
+  content: "←"
 
 /* Dots
 
@@ -364,7 +340,6 @@ a
   margin: 0
   list-style: none
   text-align: center
-
   li
     position: relative
     display: inline-block
@@ -373,7 +348,6 @@ a
     margin: 0 5px
     padding: 0
     cursor: pointer
-
     button
       font-size: 0
       line-height: 0
@@ -386,15 +360,12 @@ a
       border: 0
       outline: none
       background: transparent
-
       &:hover, &:focus
         outline: none
-
       &:hover:before, &:focus:before
         opacity: 1
-
       &:before
-        font-family: 'slick'
+        font-family: "slick"
         font-size: 15px
         line-height: 20px
         position: absolute
@@ -402,15 +373,14 @@ a
         left: 0
         width: 20px
         height: 20px
-        content: '•'
+        content: "•"
         text-align: center
-        opacity: .25
+        opacity: 0.25
         color: black
         -webkit-font-smoothing: antialiased
         -moz-osx-font-smoothing: grayscale
-
     &.slick-active button:before
-      opacity: .75
+      opacity: 0.75
       color: black
 
 .album_carousel_container
@@ -421,7 +391,6 @@ a
   z-index: 4
   position: absolute
   top: 50%
-
   /* position the top  edge of the element at the middle of the parent
   left: 50%
   transform: translate(-50%, -50%)
@@ -434,7 +403,6 @@ a
   outline: none
   text-decoration: none
   background: transparent
-
   &:hover, &:active
     background-color: rgba(0, 0, 0, 0.5)
     color: white
@@ -444,12 +412,8 @@ a
   max-height: 100%
   width: 100%
 
-#staff_list_container
-  margin-top: 4%
-  margin-bottom: 5%
-
 #staff_container
-  background-color: $section-background-color1
+  background-color: #ECEFF1
   text-align: center
 
 .section_title
@@ -465,8 +429,6 @@ a
 
 #staff_list_row
   display: table
-
-.indiv_staff_container
 
 .resident_description
   font-size: 0.93em
@@ -490,24 +452,15 @@ a
 .resident_name
   color: #ECEFF1
 
-
-#staff_col3
-  .resident_name
-    font-size: 1.2em
-
-  .resident_position, .resident_description
-    font-size: 0.9em
-
 #staff_tab_contents
   overflow-y: scroll
 
 #staff_tabs
-  font-size: 1.0em
+  font-size: 1em
   margin-bottom: 0
 
 #staff_tab_contents li
   display: none
-
   &.active
     display: block
 
@@ -518,8 +471,6 @@ a
   margin-left: 50px
   color: #263238
 
-#student_life_title
-
 #student_life_photos_row
   padding-left: 30px
   padding-right: 30px
@@ -529,8 +480,15 @@ a
   padding-right: 0
   width: 100vw
 
+#staff_list_container
+  margin-top: 4%
+  margin-bottom: 5%
+
+.indiv_staff_container
+  margin-bottom: 3%
+
 #facilities_container
-  background-color: $section-background-color2
+  background-color: #607D8B
   padding-top: 5%
   padding-left: 20%
   padding-right: 20%
@@ -547,11 +505,11 @@ a
 .facility_title
   background-color: black
   visibility: hidden
-  color: rgb(200, 200, 200)
+  color: #c8c8c8
 
 .facility_description
   visibility: hidden
-  color: rgb(200, 200, 200)
+  color: #c8c8c8
 
 .facilities_line
   margin-bottom: 2%
@@ -589,13 +547,12 @@ a
   bottom: -100%
   height: 100%
   width: 100%
-  background: rgb(100, 100, 100)
+  background: #646464
   opacity: 0
 
 .square
   position: relative
   overflow: hidden
-
   &:hover .facility_text
     bottom: 0
     -webkit-transition: all 1s, -webkit-transform 1s
@@ -605,15 +562,16 @@ a
     opacity: 0.3
 
 #apply_container
-  background-color: $section-background-color1
+  background-color: #ECEFF1
 
 #apply_header_row
   text-align: center
 
 #apply_text
-  padding-left: 10%
-  padding-right: 5%
-  padding-top: 5%
+  padding-left: 5%
+  padding-right: 3%
+  padding-top: 4%
+  padding-bottom: 5%
 
 .apply_step_description
   padding-left: 20px
@@ -621,27 +579,25 @@ a
 #contact_container
   padding-top: 40px
   text-align: center
-  background-color: $section-background-color2
+  background-color: #607D8B
 
 #contact_header
   margin-bottom: 20px
 
 #map
-  margin-bottom: 30px
-  height: 400px
-  margin-left: 40px
-  margin-right: 40px
+  height: 50vh
+  width: 70vw
+  margin: auto
 
 #form
   text-align: left
+  margin-top: 10%
   margin-left: 60px
   margin-right: 60px
 
 #name_input, #phone_input
   margin-right: 30px
   margin-bottom: 20px
-
-#subject_input
 
 #message_input
   width: 100%
@@ -651,3 +607,5 @@ a
   padding: 12px 22px
   border-radius: sharp
   border: 2px solid black !important
+
+/*# sourceMappingURL=style2.css.map

@@ -414,43 +414,33 @@
   padding-right: 2.25%; }
 
 #staff_header_row {
-  margin-bottom: 4%; }
+  margin-bottom: 0%; }
 
 #staff_list_row {
   display: table; }
-
-#staff_carousel_container {
-  width: 100%; }
-
-#staff_carousel {
-  width: 85%; }
-
-.indiv_staff_container {
-  padding-left: 2%;
-  padding-right: 2%; }
 
 .resident_description {
   font-size: 0.93em; }
 
 .resident_img {
-  width: 55%;
-  margin-left: 22.5%; }
+  width: 100%;
+}
 
 .resident_name {
-  font-weight: bold;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  background-color: red;
+    padding-top: 2%;
+    padding-bottom: 2%; }
 
 .resident_position {
-  padding-top: 0;
+  padding-top: 2%;
   margin-top: -6%; }
 
 .resident {
   margin-top: 2%; }
 
-#staff_col3 .resident_name {
-  font-size: 1.2em; }
-#staff_col3 .resident_position, #staff_col3 .resident_description {
-  font-size: 0.9em; }
+.resident_name {
+  color: #ECEFF1; }
 
 #staff_tab_contents {
   overflow-y: scroll; }
@@ -479,6 +469,15 @@
   padding-left: 0;
   padding-right: 0;
   width: 100vw; }
+
+  #staff_list_container {
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+
+.indiv_staff_container {
+  margin-bottom: 3%;
+}
 
 #facilities_container {
   background-color: #607D8B;
@@ -579,15 +578,14 @@
 
 #map {
   height: 50vh;
-  width: 80vw;
+  width: 70vw;
   margin: auto; }
 
 #form {
   text-align: left;
-  margin-top: 5%;
-  margin-left: 4vw;
-  margin-right: 4vw;
-  margin-bottom: 5%; }
+  margin-top: 10%;
+  margin-left: 60px;
+  margin-right: 60px; }
 
 #name_input, #phone_input {
   margin-right: 30px;
